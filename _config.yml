@@ -42,12 +42,12 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace:
+  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized
-category_map:
-tag_map:
+category_map: 生活感悟, 技术分享, 美丽定格, 随手笔记, 生活百态
+tag_map: android, java, linux, 多媒体
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
