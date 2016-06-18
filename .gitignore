@@ -2,3 +2,4 @@
 Thumbs.db
 .deploy_git
 public/
+db.json
