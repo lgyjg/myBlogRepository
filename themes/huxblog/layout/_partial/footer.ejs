@@ -101,14 +101,18 @@
     </div>
 </footer>
 
-<!-- jQuery -->
-<%- js('js/jquery.min.js') %>
-
-<!-- Bootstrap Core JavaScript -->
-<%- js('js/bootstrap.min.js') %>
-
-<!-- Custom Theme JavaScript -->
-<%- js('js/hux-blog.min.js') %>
+<!-- yangjg change for debug -->
+<% if (config.debugable) { %>
+    <%- js('js/jquery.js') %>
+    <%- js('js/bootstrap.js') %>
+    <!-- Custom Theme JavaScript -->
+    <%- js('js/hux-blog.js') %>
+<% } else{%>
+    <%- js('js/jquery.min.js') %>
+    <%- js('js/bootstrap.min.js') %>
+    <!-- Custom Theme JavaScript -->
+    <%- js('js/hux-blog.min.js') %>
+<% } %>
 
 
 <!-- async load function -->

@@ -21,10 +21,13 @@ permalink_defaults:
 # Site settings
 SEOTitle: 渐行渐远 | yangjianguo's Blog
 header-img: img/home-bg.jpg
+google_site_verification: xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI
 email: hustyjg@163.com
 description: ""
 keyword: ""
 
+# ForTest
+debugable: true
 
 # SNS settings
 # RSS: false

@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="google-site-verification" content="<%= config.google_site_verification %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<%= config.description %>">
     <meta name="keyword"  content="<%= config.keyword %>">
@@ -17,11 +17,16 @@
 
     <link rel="canonical" href="<%= config.url + config.root + (page.path||'').replace('index.html', '') %>">
 
-    <!-- Bootstrap Core CSS -->
-    <%- css('css/bootstrap.min.css') %>
-
-    <!-- Custom CSS -->
-    <%- css('css/hux-blog.min.css') %>
+    <!-- yangjg change for debug -->
+    <% if (config.debugable) { %>
+        <%- css('css/bootstrap.css') %>
+        <!-- Custom CSS -->
+        <%- css('css/hux-blog.css') %>
+    <% } else{%>
+        <%- css('css/bootstrap.min.css') %>
+        <!-- Custom CSS -->
+        <%- css('css/hux-blog.min.css') %>
+    <% } %>
 
     <!-- Pygments Github CSS -->
     <%- css('css/syntax') %>
