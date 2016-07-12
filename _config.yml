@@ -30,7 +30,7 @@ keyword: ""
 debugable: true
 
 # ChooseCDNserver
-use_qiniu: false
+use_qiniu: true
 
 # SNS settings
 # RSS: false
