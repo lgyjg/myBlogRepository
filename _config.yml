@@ -29,6 +29,9 @@ keyword: ""
 # ForTest
 debugable: true
 
+# ChooseCDNserver
+use_qiniu: false
+
 # SNS settings
 # RSS: false
 weibo_username:     lgyjg
