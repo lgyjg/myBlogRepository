@@ -49,14 +49,14 @@ anchorjs: true                          # if you want to customize anchor. check
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: amansite
+duoshuo_username: duoshuo_id
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 41c114db1f7b1a79a2a2442b96df6457 
+ba_track_id:  
 # Google Analytics
 ga_track_id:             # Format: UA-xxxxxx-xx
 ga_domain: 
@@ -76,8 +76,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "徐文志程序猿",
-        href: "http://xuwenzhi.com"
+        title: "渐行渐远",
+        href: "http://www.aman.site"
     },{
         title: "Hux Blog",
         href: "http://huangxuan.me"
@@ -141,6 +141,6 @@ theme: huxblog
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git #部署类型
-  repo: git@github.com:lgyjg/lgyjg.github.io.git
-  #repository: https://github.com/lgyjg/lgyjg.github.io.git
+  repo: git@github.com:****/*****.github.io.git
+  #repository: https://github.com/****/****.github.io.git
   branch: master   #部署分支
