@@ -5,7 +5,7 @@ subtitle: To commemorate the first anniversary of graduation
 author: JianGuo
 header-img: graduation.jpg
 tags:
-  - Markdown
+  - 感悟
 date: 2016-07-15 03:28:29
 ---
 
