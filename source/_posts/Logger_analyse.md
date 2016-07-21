@@ -14,7 +14,6 @@ date: 2016-07-21 20:58:29
 <img align="right" src='https://raw.githubusercontent.com/orhanobut/logger/master/images/logger-logo.png' width='128' height='128'/>
 
 # Loger简介
-
 Logger是github上关于Andorid Log打印优化和封装的开源项目，是一款简洁、优雅、强大的log跟踪器（官方如是说），截止目前已经有4003个star，700多个fork。项目地址为：[https://github.com/orhanobut/logger](https://github.com/orhanobut/logger)。  
 
 它主要提供了以下功能：
