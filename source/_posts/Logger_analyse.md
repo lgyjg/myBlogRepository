@@ -12,9 +12,10 @@ date: 2016-07-21 20:58:29
 > 最近突发奇想，想自己重新封装android的log机制，以便于在以后的开发中简单的使用log进行调试。我们知道，在大多数的情况下我们需要对log的状态进行配置，在user版本中为了安全，某些关键log不能打印出来，同时，可能在调试的时候，我们只需要打印某个级别的log。通常情况下，我们是在每个类中进行log打印的控制（使用DEBUG的全局变量），每次打印log时都需要进行判断，这样的代码显然有点繁琐。所以，就需要通过封装Log完成上面的需求。为了避免重复造轮子，我在Github上检索了一下，果然发现了宝藏。一个名为Logger的开源项目，完美的诠释了什么是轮子。所以直接搬来用了。接下来的内容介绍这个项目如何使用。
 
 # Loger简介
+<img align="right" src='https://raw.githubusercontent.com/orhanobut/logger/master/images/logger-logo.png' width='128' height='128'/>
+
 Logger是github上关于Andorid Log打印优化和封装的开源项目，是一款简洁、优雅、强大的log跟踪器（官方如是说），截止目前已经有4003个star，700多个fork。项目地址为：[https://github.com/orhanobut/logger](https://github.com/orhanobut/logger)。  
 
-<img align="right" src='https://raw.githubusercontent.com/orhanobut/logger/master/images/logger-logo.png' width='128' height='128'/>
 它主要提供了以下功能：
   * 输出线程信息
   * 输出类信息
