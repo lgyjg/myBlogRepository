@@ -4,8 +4,7 @@ title: Markdown使用总结
 subtitle: Markdown 是一种轻量级标记语言，它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”
 author: JianGuo
 header-img: markdown-guide-1.jpg
-tags:
-  - Markdown
+tags: Markdown
 date: 2016-07-12 19:48:29
 ---
 
