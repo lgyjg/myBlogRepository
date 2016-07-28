@@ -25,7 +25,7 @@ Logger是github上关于Andorid Log打印优化和封装的开源项目，是一
   * 直接跳转到代码行
 
 下面来看看打印出的log效果吧：  
-![Log](https://raw.githubusercontent.com/orhanobut/logger/master/images/current-log.png)
+![Log](https://raw.githubusercontent.com/orhanobut/logger/master/images/description.png)
 
 > 同时，从所有的fork列表中，发现了另一个比较好的版本演变，如果感兴趣的话可以异步：[tianzhijiexian/logger](https://github.com/tianzhijiexian/logger)。
 
