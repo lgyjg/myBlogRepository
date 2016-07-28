@@ -19,12 +19,12 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: 渐行渐远 | yangjianguo's Blog
+SEOTitle: 杨建国的博客 | 渐行渐远
 header-img: img/home-bg.jpg
 google_site_verification: 7s8wMtCUkn0si9Ku0tgMVDiPBmNXQRIj3L9imZLNFTg
 email: hustyjg@163.com
-description: ""
-keyword: ""
+description: 杨建国的博客，专注android领域
+keywords: 杨建国,渐行渐远,博客,android,aman.site
 
 # ForTest
 debugable: true
@@ -79,6 +79,9 @@ friends: [
         title: "徐文志程序猿",
         href: "http://xuwenzhi.com"
     },{
+        title: "宋祎超",
+        href: "http://songyichao.com"
+    },{
         title: "Hux Blog",
         href: "http://huangxuan.me"
     }
@@ -90,35 +93,36 @@ friends: [
 
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+source_dir: source   #资源文件夹，这个文件夹用来存放内容
+public_dir: public   #公共文件夹，这个文件夹用于存放生成的站点文件
+tag_dir: tags        #标签文件夹
+archive_dir: archives #归档文件夹
+category_dir: categories #分类文件夹
+code_dir: downloads/code #Include code 文件夹
+i18n_dir: :lang          #国际化（i18n）文件夹
+skip_render: #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
 
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: true
-relative_link: false
-future: true
-highlight:
-  enable: true
+auto_spacing: false  # 在中文和英文之间加入空格
+titlecase: false     # Transform title into titlecase
+external_link: true  # Open external links in new tab
+filename_case: 0     # 文件名称转换为 (1) 小写或 (2) 大写
+render_drafts: false # 显示草稿
+post_asset_folder: true #启动 Asset 文件夹
+relative_link: false # 把链接改为与根目录的相对位址
+future: true         # 显示未来的文章
+highlight:           # 代码块的设置
+  enable: false
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized
-category_map:
-tag_map:
+category_map: 影集 技术 感悟
+tag_map: 影集
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

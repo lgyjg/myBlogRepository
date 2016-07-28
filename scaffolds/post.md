@@ -8,4 +8,6 @@ iframe:     "http://huangxuan.me/js-module-7day/"
 header-img: "img/post-bg.jpg"
 tags:
     - Life
+categories:
+keywords:
 ---

@@ -3,9 +3,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="<%= config.google_site_verification %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="<%= config.description %>">
-    <meta name="keyword"  content="<%= config.keyword %>">
+    <!--  <meta name="description" content="<%= config.description %>"> -->
+    <!--  <meta name="keyword"  content="<%= config.keyword %>"> -->
     <link rel="shortcut icon" href="<%= config.root %>img/favicon.ico">
+
+    <!-- yangjg add meta data for SEO keyword optimization -->
+    <% if (page.keywords){ %>
+        <meta name="keywords" content="<%= page.keywords %>">
+    <% } else if (page.tags){ %>
+       <% var thistags=[];
+          page.tags.each(function(k){
+          thistags.push(k.name);
+       }) %>
+       <meta name="keywords" content="<%= thistags %>">
+    <% } else if (config.keywords){ %>
+       <meta name="keywords" content="<%= config.keywords %>">
+    <% } %>
+
+    <%  var description = page.description || '';
+        if (!description) {
+            if (page.excerpt) {
+                description = strip_html(page.excerpt);
+            } else if (page.content) {
+                description = strip_html(page.content);
+            } else {
+                description = config.description;
+            }
+        }
+        description = description.substring(0, 200).replace(/^\s+|\s+$/g, '');
+    %>
+    <meta name="description" content="<%= description %>">
 
     <title>
         <% if (page.title) { %>
