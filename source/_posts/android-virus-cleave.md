@@ -14,7 +14,7 @@ keywords: android virus
 > 前言：今天一位朋友突然发朋友圈说自己的手机中毒了，群发短信给所有的通讯录朋友，处于好奇，就问朋友发的什么，从事android编程将近三年了，从来没有写过一个有损用户利益的程序，也没有见过真正意义上的android病毒。既然有这个机会，那就好好看看这个病毒究竟厉害在什么地方了。在这里和大家探讨下，懂编程的朋友顺便探讨学习下。不懂的朋友就了解下病毒特征，放置下次遇到同样的问题。
 
 很快，朋友给我发送了当时中毒时的短信截图。  
-!![微信消息截图](android-virus-cleave/webwxgetmsgimg.png)
+![微信消息截图](./webwxgetmsgimg.png)
 
 PS：这是我迄今为止见过最高大上的请柬了。想必新郎一定是个程序猿吧，23333～
 
@@ -23,16 +23,16 @@ PS：这是我迄今为止见过最高大上的请柬了。想必新郎一定是
 ## 先来看看IP
 竟然没有用域名！差评！这也是够低成本犯罪啊。。。那我们先来看看45.127.97.231这个ip，看看能不能挖掘到点什么重要信息。  
 ip的位置信息：  
-![ip位置](android-virus-cleave/ip_address.png)
+![ip位置](./ip_address.png)
 
 果然是境外犯罪，增加了追查难度。在香港租个主机，
 
 用http://reverseip.domaintools.com/search/?q=45.127.97.231 反查下绑定的域名
-![](android-virus-cleave/ips_domain.png)
+![反查下绑定的域名](./ips_domain.png)
 
 果然有域名，而且只有一个，基本可以判断这个服务器不是租的，那再来查查域名绑定的信息。  
 
-![](android-virus-cleave/bugydq.science.png)
+![域名绑定的信息](./bugydq.science.png)
 详情可以点击下面的链接：  
 https://whois.aliyun.com/whois/domain/bugydq.science?spm=5176.8076989.339865.11.maXkw8&file=bugydq.science
 
@@ -41,7 +41,7 @@ https://whois.aliyun.com/whois/domain/bugydq.science?spm=5176.8076989.339865.11.
 
 ## APK分析
 那我们回来再看看apk吧
-![apk_analyze](android-virus-cleave/apk_analyze.png)
+![apk_analyze](./apk_analyze.png)
 包的大小很是有人啊，只有200k左右，现在的网速就是点完就下完的节奏，根本猝不及防。
 ### 程序清单文件
 
@@ -253,5 +253,5 @@ apk的反编译相比还是比较简单的。
 2. ./jd-gui/jd-gui，弹出图形界面，选择 File-Open File... ，打开 2_dex2jar.jar
 
 我们就看到了代码的结构。  
-![](android-virus-cleave/code_dir_structure.png)
+![代码的结构](./code_dir_structure.png)
 果然混淆了，这个后面的分析带来了不少的麻烦，不过没关系。代码量少，我们硬着头皮看也能看懂。
